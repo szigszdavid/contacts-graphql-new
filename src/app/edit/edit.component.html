@@ -1,0 +1,5 @@
+<div class="container">
+    <h2 class="display-2 my-3">{{ contact.data.findContactById.id ? "Edit contact" : "New contact" }}</h2>
+    <app-create [contact]="contact.data.findContactById" (save)="handleSave($event)"></app-create>
+</div>
+
